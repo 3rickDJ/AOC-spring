@@ -1,4 +1,4 @@
-require_relative 'floor_calculator'
+require 'floor_calculator'
 
 describe FloorCalculator do
   context 'sumar 1 y restar 1 si hay parentesis (, ) ' do
