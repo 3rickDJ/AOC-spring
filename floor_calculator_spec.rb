@@ -5,9 +5,12 @@ describe FloorCalculator do
     it 'devuelve 0' do
       calculator = FloorCalculator.new
       result1 = calculator.calcChars("(())".chars)
-      result2 = calculator.calcChars("()()".chars)
       expect(result1).to eq(0)
-      expect(result2).to eq(0)
+    end
+    it 'devuelve 3' do
+      calculator = FloorCalculator.new
+      result2 = calculator.calcChars("(()(()(".chars)
+      expect(result2).to eq(3)
     end
   end
 end
